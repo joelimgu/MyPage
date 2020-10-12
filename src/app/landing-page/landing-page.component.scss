@@ -1,0 +1,56 @@
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 37vw 60vw;
+  grid-auto-rows: 15vh;
+  padding-left: 3vw;
+}
+
+.grid-item {
+  /*background-color: cyan;*/
+}
+
+.tite {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 0vh 0vw 0vh 0vw;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.hero-image {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 50vw;
+  height: auto;
+  padding: 13vh 5vw 1vh 5vw;
+}
+
+.self-description {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.self-description h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.self-description p {
+  font-size: 0.9rem;
+}
+
+
+.down-arrow {
+  position: absolute;
+  left: 50vw;
+  top: 90vh;
+}
