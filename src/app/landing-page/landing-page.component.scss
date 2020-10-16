@@ -1,6 +1,8 @@
 
-
-
+body {
+  height: 100vh;
+  width: 100vw;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 37vw 60vw;
@@ -29,14 +31,14 @@
   grid-row-end: 3;
   width: 50vw;
   height: auto;
-  padding: 13vh 5vw 1vh 5vw;
+  padding: 10vh 5vw 1vh 5vw;
 }
 
 .self-description {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-end: 6;
 }
 
 .self-description h2 {
@@ -53,4 +55,31 @@
   position: absolute;
   left: 50vw;
   top: 90vh;
+}
+
+
+$socail-media-container-size: 4vw;
+.social-media-grid {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-template-columns: repeat(5, $socail-media-container-size);
+  grid-column-gap: 1vw;
+  margin-top: 5vh;
+}
+
+.socail-media-container {
+  height: $socail-media-container-size;
+  width: $socail-media-container-size;
+  background-color: #92B4F4;
+  border-radius: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-link {
+  height: $socail-media-container-size;
+  width: $socail-media-container-size;
 }

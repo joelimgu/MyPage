@@ -1,0 +1,64 @@
+
+section {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+$project-card-width : 20vw;
+$project-card-height : 70vh;
+.grid-container {
+  margin-left: 3vw;
+  display: grid;
+  grid-template-rows: 15vh 5vh $project-card-height;
+  grid-column-gap: 4vw;
+}
+
+
+.title {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.porject-card-container {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin-top: 2vh;
+  
+  max-width: 90vw;
+  overflow-y: scroll;
+}
+
+.project-card {
+  box-shadow: -1px -1px 6px grey;
+  border-width: 1px;
+  border-radius: 2vh;
+  width: $project-card-width;
+  height: $project-card-height;
+  margin-left: 10vw;
+}
+
+#fisrt-project-card {
+  margin-left: 0;
+}
+
+.project-card-shadow {
+  border-width: 1px;
+  border-radius: 2vh;
+  box-shadow: 5px 5px 6px grey;
+  width: $project-card-width;
+  height: $project-card-height;
+}
+
+.project-card-content {
+    padding: 2vh  2vh  2vh  2vh;
+}
+
+.project-card-content img {
+  height: 20vh;
+  width: 20vh;
+  display: block;
+  margin: 2vh auto 2vh auto;
+}
