@@ -7,6 +7,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProjectsGalleryComponent } from './projects-gallery/projects-gallery.component';
 import { BottomPageComponent } from './bottom-page/bottom-page.component';
 
+import { SimplebarAngularModule } from 'simplebar-angular';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { BottomPageComponent } from './bottom-page/bottom-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SimplebarAngularModule
   ],
   providers: [],
   bootstrap: [AppComponent]

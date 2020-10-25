@@ -12,12 +12,12 @@
 $project-card-width : 30rem;
 $project-card-height : 70vh;
 .project-card-container{
-  margin: 5rem 0 0 6vw;
+  margin: 4rem 0 0 6vw;
   display: flex;
-  column-gap: 12rem;
+  column-gap: 6rem;
   width: 100%;
-  max-width: 80vw;
-  overflow: scroll;
+  max-width: 90vw;
+  overflow-x: scroll;
 }
 
 
@@ -31,7 +31,7 @@ $project-card-height : 70vh;
 }
 
 #fisrt-project-card {
-  margin-left: 0;
+  margin-left: 1rem;
 }
 
 .project-card-shadow {
