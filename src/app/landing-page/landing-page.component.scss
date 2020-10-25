@@ -1,8 +1,9 @@
 
-body {
+#landing-page {
   height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: 37vw 60vw;
@@ -20,7 +21,7 @@ body {
   grid-row-start: 2;
   grid-row-end: 3;
   padding: 0vh 0vw 0vh 0vw;
-  font-size: 2.5rem;
+  font-size: 4.3rem;
   font-weight: 500;
 }
 
@@ -29,7 +30,7 @@ body {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  width: 50vw;
+  max-width: 60rem;
   height: auto;
   padding: 10vh 5vw 1vh 5vw;
 }
@@ -43,11 +44,11 @@ body {
 
 .self-description h2 {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2.1rem;
 }
 
 .self-description p {
-  font-size: 0.9rem;
+  font-size: 1.25rem;
 }
 
 
