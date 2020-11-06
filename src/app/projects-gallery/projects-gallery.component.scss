@@ -18,6 +18,7 @@ $project-card-height : 70vh;
   width: 100%;
   max-width: 90vw;
   overflow-x: scroll;
+  padding: 1rem 0 1rem 0;
 }
 
 
@@ -28,6 +29,25 @@ $project-card-height : 70vh;
   border-radius: 2vh;
   width: $project-card-width;
   height: $project-card-height;
+  animation-duration: .5s;
+  animation-name: unscale-gallery-cards;
+  animation-fill-mode: forwards;
+}
+
+.project-card:hover {
+  animation-fill-mode: forwards;
+  animation-duration: .5s;
+  animation-name: scale-gallery-cards;
+}
+
+@keyframes scale-gallery-cards {
+  from {}
+  to {transform: scale(1.05);};
+}
+
+@keyframes unscale-gallery-cards {
+  from {transform: scale(1.05);}
+  to {transform: scale(1);}
 }
 
 #fisrt-project-card {
@@ -53,6 +73,23 @@ $project-card-height : 70vh;
   margin: 2vh auto 2vh auto;
 }
 
+.gallery-btn-container{
+  display: flex;
+  width: 100%;
+}
+
+.gallery-btn {
+  flex: 1;
+  margin: 1rem 5rem 0 5rem;
+  height: 5rem;
+  max-width: 100%;
+  color: white;
+  font-size: 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-image: linear-gradient(to bottom right, #B3FFE3, #6C63FF);
+}
+
 @media only screen and (max-width: 600px) {
-  
+
 }

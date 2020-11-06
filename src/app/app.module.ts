@@ -8,13 +8,15 @@ import { ProjectsGalleryComponent } from './projects-gallery/projects-gallery.co
 import { BottomPageComponent } from './bottom-page/bottom-page.component';
 
 import { SimplebarAngularModule } from 'simplebar-angular';
+import { AppreciationsComponent } from './appreciations/appreciations.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     ProjectsGalleryComponent,
-    BottomPageComponent
+    BottomPageComponent,
+    AppreciationsComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,30 @@ p {
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  font-weight: bolder;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
 .name {
   font-style: italic;
 }
