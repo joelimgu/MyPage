@@ -85,6 +85,18 @@ $socail-media-container-size: 4vw;
   width: $socail-media-container-size;
 }
 
+.mail-pop-up {
+  position: fixed;
+  height: 50vh;
+  width: 50vw;
+  margin: 25vh 25vw 25vh 25vw;
+  border-radius: 1rem;
+  background-color: #92B4F4;
+  color: black;
+  text-align: center;
+}
+
+
 
 
 @media only screen and (max-width: 600px) {
