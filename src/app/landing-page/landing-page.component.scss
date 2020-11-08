@@ -89,8 +89,10 @@ $socail-media-container-size: 4vw;
 .pop-up-backgrownd {
   display: none;
   position: absolute;
-  height: 100vh;
+  height: 300vh;
+  max-height: 100%;
   width: 100vw;
+  max-width: 100%;
   background-color: black;
   z-index: -1;
 }
