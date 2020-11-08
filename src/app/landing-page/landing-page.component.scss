@@ -12,7 +12,7 @@
 }
 
 .grid-item {
-  /*background-color: cyan;*/
+
 }
 
 .tite {
@@ -78,6 +78,7 @@ $socail-media-container-size: 4vw;
   border-radius: 2vh;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .social-media-link {
@@ -85,16 +86,113 @@ $socail-media-container-size: 4vw;
   width: $socail-media-container-size;
 }
 
-.mail-pop-up {
+.pop-up-backgrownd {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  z-index: -1;
+}
+
+.pop-up{
+  visibility: hidden;
+  display: grid;
   position: fixed;
-  height: 50vh;
+  height: 33vh;
   width: 50vw;
   margin: 25vh 25vw 25vh 25vw;
   border-radius: 1rem;
   background-color: #92B4F4;
-  color: black;
-  text-align: center;
+  z-index: 2;
+
+
+  .text-container {
+    margin: auto;
+    .copy-element {
+      margin: 3rem 0 3rem 0;
+      display: flex;
+
+      h2 {
+        margin: .5rem 0 0 0;
+      }
+
+      img {
+        height: 4rem;
+        width: 4rem;
+        margin: 0 1rem 0 0;
+        cursor: pointer;
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
 }
+
+.copy-logo-animation {
+  animation: copy-animation 1s ease-in-out;
+}
+@keyframes fade-in {
+  from {opacity: 0}
+  to{opacity: .7; z-index: 2}
+}
+@keyframes fade-out{
+  from{opacity: .7}
+  to{opacity: 0; display: none; visibility:hidden}
+}
+@keyframes pop-in{
+  from{transform: scale(0); }
+  to{transform: scale(1); visibility:visible;}
+}
+@keyframes pop-out{
+  from{}
+  to{visibility: hidden;}
+}
+
+@keyframes copy-animation {
+  0% {}
+  25% {}
+  50% {}
+  75% {}
+  100% {}
+}
+
 
 
 
@@ -104,9 +202,7 @@ $socail-media-container-size: 4vw;
     display: inline;
   }
 
-  .grid-item {
-    /*background-color: cyan;*/
-  }
+  .grid-item {  }
 
   .tite {
     padding: 0vh 0vw 0vh 0vw;

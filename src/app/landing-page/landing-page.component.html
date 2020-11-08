@@ -1,9 +1,44 @@
 
 
 <section id="landing-page">
-  <div class="mail-pop-up">
-    <h2>Personal: joelimgu@gmail.com</h2>
-    <h2>Proffesional: imbergam@etud.insa-toulouse.fr</h2>
+  <div class="pop-up-backgrownd" id='pop-up-backgrownd' (click)='disable_mail_popup()'></div>
+
+  <div class="pop-up" id='mail-pop-up'>
+    <div class="text-container">
+      <div class="copy-element">
+        <div class="tooltip">
+        <img src="../assets/images/copy_icon.svg" alt="copy" id="copy-personal-email" (click)="copy_text_to_clopboard('joelimgu@gmail.com','copy-personal-email','copy-personal-email-tooltip-text')" (mouseout)="copy_out('copy-personal-email-tooltip-text')">
+        <span class='tooltiptext'><p id='copy-personal-email-tooltip-text'>Copy</p></span>
+        </div>
+        <h2>Personal: joelimgu@gmail.com</h2>
+      </div>
+      <div class="copy-element">
+        <div class="tooltip">
+          <img src="../assets/images/copy_icon.svg" alt="copy" id='copy-professional-email' (click)="copy_text_to_clopboard('imbergam@etud.insa-toulouse.fr','copy-professional-email','copy-professional-email-tooltip-text')" (mouseout)="copy_out('copy-professional-email-tooltip-text')">
+          <span class='tooltiptext'><p  id='copy-professional-email-tooltip-text'>Copy</p></span>
+        </div>
+        <h2>Profesional: imbergam@etud.insa-toulouse.fr</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="pop-up" id='phone-pop-up'>
+    <div class="text-container">
+      <div class="copy-element">
+        <div class="tooltip">
+        <img src="../assets/images/copy_icon.svg" alt="copy" id="copy-es-phone" (click)="copy_text_to_clopboard('+34 617958317','copy-es-phone','copy-es-phone-tooltip-text')" (mouseout)="copy_out('copy-es-phone-tooltip-text')">
+        <span class='tooltiptext'><p id='copy-es-phone-tooltip-text'>Copy</p></span>
+        </div>
+        <h2>Spanish phone: +34 617958317</h2>
+      </div>
+      <div class="copy-element">
+        <div class="tooltip">
+          <img src="../assets/images/copy_icon.svg" alt="copy" id='copy-fr-phone' (click)="copy_text_to_clopboard('+33 646171050','copy-fr-phone','copy-fr-phone-tooltip-text')" (mouseout)="copy_out('ccopy-fr-phone-tooltip-text')">
+          <span class='tooltiptext'><p  id='copy-fr-phone-tooltip-text'>Copy</p></span>
+        </div>
+        <h2>France: +33 646171050</h2>
+      </div>
+    </div>
   </div>
 
 
@@ -34,17 +69,17 @@
           </div>
         </a>
 
-        <div (click)='mail_click()'>
+        <div (click)='enable_mail_popup()'>
           <div class="grid-item socail-media-container">
             <img src="../assets/images/icon_mail.svg" alt="mail icon">
           </div>
         </div>
 
-        <a href="">
+        <div (click)='enable_phone_popup()'>
           <div class="grid-item socail-media-container">
             <img src="../assets/images/icon_phone.svg" alt="icon_phone icon">
           </div>
-        </a>
+        </div>
       </div>
       <a href="#projects-gallery" class="down-arrow">
           <img src="../assets/images/down_arrow.svg" alt="V" >
