@@ -28,3 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 https://www.sitepoint.com/understanding-and-using-rem-units-in-css/
+
+ng build --prod --output-path docs --base-href /MyPage/

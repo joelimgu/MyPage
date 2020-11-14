@@ -1,0 +1,31 @@
+<span id='minecraft-home'>
+  <img src="assets/images/Creeper.svg" alt="Creeper" id="creeper">
+  <img src="assets/images/home_icon.svg" alt="home" class="home-icon" (click)="goto('')">
+  <div class="project-card-container">
+
+    <div class="project-card">
+        <div class="project-card-shadow">
+          <div class="project-card-content">
+            <h1>Survival</h1>
+            <img src="assets/images/minecraft_server_logo.svg" alt="server logo">
+            <p class="ip" (click)="copy('joelimgu.myminecraft.org')">IP: joelimgu.myminecraft.org</p>
+            <p>Players Onnline : {{onnlinePlayers}}</p>
+            <div class="status-indicator"><p>Status : </p><p [ngStyle]="{'color' : isServerOnline ? '#54FFBD' : '#E02950'}"> {{isServerOnline ? " Online" : " Ofline"}}</p></div>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="project-card">
+            <div class="project-card-shadow">
+              <div class="project-card-content">
+                <h1>Creative</h1>
+                <img src="assets/images/wip_img_alpha_channel.png" alt="server logo">
+                <p></p>
+              </div>
+            </div>
+        </div>
+
+  </div>
+
+</span>

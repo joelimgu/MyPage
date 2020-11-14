@@ -183,8 +183,8 @@ $socail-media-container-size: 4vw;
   to{transform: scale(1); visibility:visible;}
 }
 @keyframes pop-out{
-  from{}
-  to{visibility: hidden;}
+  from{transform: scale(1)}
+  to{transform: scale(0); visibility: hidden;}
 }
 
 @keyframes copy-animation {
