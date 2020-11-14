@@ -1,25 +1,28 @@
 
 .home-icon {
   $home-icon-size : 4rem;
+  $margin : 2rem;
   height: $home-icon-size;
   width: $home-icon-size;
+  margin: $margin 0 0 $margin;
+  cursor: pointer;
 }
 
 
-$project-card-width : 30rem;
-$project-card-height : 70vh;
-.project-card-container{
-  margin: 4rem 0 0 6vw;
-  display: flex;
+$project-card-width : 40rem;
+$project-card-height : 50rem;
 
+.project-card-container {
+  margin: 2rem 0 0 1rem;
+  display: flex;
   width: 100%;
   max-width: 90vw;
-  overflow-x: scroll;
   padding: 1rem 0 1rem 0;
 
 
   .project-card {
-    margin: 1rem;
+    background-image: linear-gradient(to bottom right, #00DDFF, #D68BED );
+    margin: 1rem 8rem 0 8rem;
     box-shadow: -1px -1px 6px grey;
     border-width: 1px;
     border-radius: 2vh;
@@ -39,7 +42,52 @@ $project-card-height : 70vh;
 
     .project-card-content {
         padding: 2vh  2vh  2vh  2vh;
+
+        h1 {
+          font-size: 6rem;
+          font-weight: 400;
+        }
+        img {
+          height: 20vh;
+          width: 20vh;
+          display: inline-block;
+          margin: 4vh auto 4vh 4vh;
+        }
+        p {
+          font-size: 2rem;
+          margin: 1rem 0 0 0;
+        }
+        .status-indicator{
+          display: flex;
+        }
+        .ip {
+          cursor: pointer;
+        }
     }
   }
+}
 
+.project-card:hover {
+  animation-fill-mode: forwards;
+  animation-duration: .5s;
+  animation-name: scale-gallery-cards;
+}
+
+#creeper {
+  position: absolute;
+  height: 95vh;
+  width: auto;
+  margin: 5vh 0 0 85rem;
+  z-index: 1;
+}
+
+
+@keyframes scale-gallery-cards {
+  from {}
+  to {transform: scale(1.05);};
+}
+
+@keyframes unscale-gallery-cards {
+  from {transform: scale(1.05);}
+  to {transform: scale(1);}
 }

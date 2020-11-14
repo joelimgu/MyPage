@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //import * as $ from "jquery";
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-projects-gallery',
@@ -9,10 +10,13 @@ import { Component, OnInit } from '@angular/core';
 
 export class ProjectsGalleryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
         //$('h1').css('color','green')
   }
 
+  goto(href: string) {
+    this.router.navigate([href]);
+  }
 }
