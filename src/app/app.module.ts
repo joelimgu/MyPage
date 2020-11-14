@@ -9,6 +9,7 @@ import { BottomPageComponent } from './bottom-page/bottom-page.component';
 
 import { SimplebarAngularModule } from 'simplebar-angular';
 import { AppreciationsComponent } from './appreciations/appreciations.component';
+import { MinecraftHomeComponent } from './minecraft-home/minecraft-home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppreciationsComponent } from './appreciations/appreciations.component'
     LandingPageComponent,
     ProjectsGalleryComponent,
     BottomPageComponent,
-    AppreciationsComponent
+    AppreciationsComponent,
+    MinecraftHomeComponent
   ],
   imports: [
     BrowserModule,

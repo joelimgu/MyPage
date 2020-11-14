@@ -1,0 +1,45 @@
+
+.home-icon {
+  $home-icon-size : 4rem;
+  height: $home-icon-size;
+  width: $home-icon-size;
+}
+
+
+$project-card-width : 30rem;
+$project-card-height : 70vh;
+.project-card-container{
+  margin: 4rem 0 0 6vw;
+  display: flex;
+
+  width: 100%;
+  max-width: 90vw;
+  overflow-x: scroll;
+  padding: 1rem 0 1rem 0;
+
+
+  .project-card {
+    margin: 1rem;
+    box-shadow: -1px -1px 6px grey;
+    border-width: 1px;
+    border-radius: 2vh;
+    width: $project-card-width;
+    height: $project-card-height;
+    animation-duration: .5s;
+    animation-name: unscale-gallery-cards;
+    animation-fill-mode: forwards;
+
+    .project-card-shadow {
+      border-width: 1px;
+      border-radius: 2vh;
+      box-shadow: 5px 5px 6px grey;
+      width: $project-card-width;
+      height: $project-card-height;
+    }
+
+    .project-card-content {
+        padding: 2vh  2vh  2vh  2vh;
+    }
+  }
+
+}
