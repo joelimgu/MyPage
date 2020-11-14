@@ -7,14 +7,14 @@
     <div class="text-container">
       <div class="copy-element">
         <div class="tooltip">
-        <img src="../assets/images/copy_icon.svg" alt="copy" id="copy-personal-email" (click)="copy_text_to_clopboard('joelimgu@gmail.com','copy-personal-email','copy-personal-email-tooltip-text')" (mouseout)="copy_out('copy-personal-email-tooltip-text')">
+        <img src="assets/images/copy_icon.svg" alt="copy" id="copy-personal-email" (click)="copy_text_to_clopboard('joelimgu@gmail.com','copy-personal-email','copy-personal-email-tooltip-text')" (mouseout)="copy_out('copy-personal-email-tooltip-text')">
         <span class='tooltiptext'><p id='copy-personal-email-tooltip-text'>Copy</p></span>
         </div>
         <h2>Personal: joelimgu@gmail.com</h2>
       </div>
       <div class="copy-element">
         <div class="tooltip">
-          <img src="../assets/images/copy_icon.svg" alt="copy" id='copy-professional-email' (click)="copy_text_to_clopboard('imbergam@etud.insa-toulouse.fr','copy-professional-email','copy-professional-email-tooltip-text')" (mouseout)="copy_out('copy-professional-email-tooltip-text')">
+          <img src="assets/images/copy_icon.svg" alt="copy" id='copy-professional-email' (click)="copy_text_to_clopboard('imbergam@etud.insa-toulouse.fr','copy-professional-email','copy-professional-email-tooltip-text')" (mouseout)="copy_out('copy-professional-email-tooltip-text')">
           <span class='tooltiptext'><p  id='copy-professional-email-tooltip-text'>Copy</p></span>
         </div>
         <h2>Profesional: imbergam@etud.insa-toulouse.fr</h2>
@@ -26,14 +26,14 @@
     <div class="text-container">
       <div class="copy-element">
         <div class="tooltip">
-        <img src="../assets/images/copy_icon.svg" alt="copy" id="copy-es-phone" (click)="copy_text_to_clopboard('+34 617958317','copy-es-phone','copy-es-phone-tooltip-text')" (mouseout)="copy_out('copy-es-phone-tooltip-text')">
+        <img src="assets/images/copy_icon.svg" alt="copy" id="copy-es-phone" (click)="copy_text_to_clopboard('+34 617958317','copy-es-phone','copy-es-phone-tooltip-text')" (mouseout)="copy_out('copy-es-phone-tooltip-text')">
         <span class='tooltiptext'><p id='copy-es-phone-tooltip-text'>Copy</p></span>
         </div>
         <h2>Spanish phone: +34 617958317</h2>
       </div>
       <div class="copy-element">
         <div class="tooltip">
-          <img src="../assets/images/copy_icon.svg" alt="copy" id='copy-fr-phone' (click)="copy_text_to_clopboard('+33 646171050','copy-fr-phone','copy-fr-phone-tooltip-text')" (mouseout)="copy_out('ccopy-fr-phone-tooltip-text')">
+          <img src="assets/images/copy_icon.svg" alt="copy" id='copy-fr-phone' (click)="copy_text_to_clopboard('+33 646171050','copy-fr-phone','copy-fr-phone-tooltip-text')" (mouseout)="copy_out('ccopy-fr-phone-tooltip-text')">
           <span class='tooltiptext'><p  id='copy-fr-phone-tooltip-text'>Copy</p></span>
         </div>
         <h2>France: +33 646171050</h2>
@@ -41,49 +41,50 @@
     </div>
   </div>
 
-
     <div class="grid-container">
       <h1 class="grid-item tite">Joel <br>IMBERGAMO GUASCH</h1>
-      <img class="grid-item hero-image" src="../assets/images/landing_page_hero_image.svg" alt="Programming avatar image">
+      <img class="grid-item hero-image" src="assets/images/landing_page_hero_image.svg" alt="Programming avatar image">
+
       <div  class="grid-item self-description">
-        <h2 >QUI SUIS-JE?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 >Who am I?</h2>
+        <p>I am Joel Imbergamo, a second-year student at INSA Toulouse. I am a technology enthusiast, always looking to be up to date with the latest tech news. It is a way for me to learn and understand new topics. Also, I love to create and work on my little projects when I have time, like this website!</p>
       </div>
 
       <div class="social-media-grid">
         <a href="https://www.instagram.com/joelimbergamo/">
           <div class="grid-item socail-media-container">
-            <img src="../assets/images/instagram_icon.svg" alt="instagram icon">
+            <img src="assets/images/instagram_icon.svg" alt="instagram icon">
           </div>
         </a>
 
         <a href="https://www.linkedin.com/in/joel-imbergamo-guasch-3431b21a5/">
           <div class="grid-item socail-media-container">
-            <img src="../assets/images/icon_linkedin.svg" alt="linkedin icon">
+            <img src="assets/images/icon_linkedin.svg" alt="linkedin icon">
           </div>
         </a>
 
         <a href="https://github.com/joelimgu">
           <div class="grid-item socail-media-container">
-            <img src="../assets/images/icon_github.svg" alt="github icon">
+            <img src="assets/images/icon_github.svg" alt="github icon">
           </div>
         </a>
 
         <div (click)='enable_mail_popup()'>
           <div class="grid-item socail-media-container">
-            <img src="../assets/images/icon_mail.svg" alt="mail icon">
+            <img src="assets/images/icon_mail.svg" alt="mail icon">
           </div>
         </div>
 
         <div (click)='enable_phone_popup()'>
           <div class="grid-item socail-media-container">
-            <img src="../assets/images/icon_phone.svg" alt="icon_phone icon">
+            <img src="assets/images/icon_phone.svg" alt="icon_phone icon">
           </div>
         </div>
       </div>
       <a href="#projects-gallery" class="down-arrow">
-          <img src="../assets/images/down_arrow.svg" alt="V" >
+          <img src="assets/images/down_arrow.svg" alt="V" >
       </a>
+
 
     </div>
 
