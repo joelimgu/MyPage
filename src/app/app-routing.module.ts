@@ -4,10 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppreciationsComponent } from "./appreciations/appreciations.component";
 import { LandingPageComponent } from "./landing-page/landing-page.component";
 import { MinecraftHomeComponent } from "./minecraft-home/minecraft-home.component";
+import { AuthPageComponent } from "./auth-page/auth-page.component";
 
 const routes: Routes = [
   {path:'appreciations', component:AppreciationsComponent},
   {path:'minecraft', component:MinecraftHomeComponent},
+  {path:'auth', component:AuthPageComponent},
   {path:'', component: LandingPageComponent}
 ];
 

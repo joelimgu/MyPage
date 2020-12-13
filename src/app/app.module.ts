@@ -14,6 +14,7 @@ import { MinecraftHomeComponent } from './minecraft-home/minecraft-home.componen
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthPageComponent } from './auth-page/auth-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProjectsGalleryComponent,
     BottomPageComponent,
     AppreciationsComponent,
-    MinecraftHomeComponent
+    MinecraftHomeComponent,
+    AuthPageComponent
   ],
   imports: [
     BrowserModule,

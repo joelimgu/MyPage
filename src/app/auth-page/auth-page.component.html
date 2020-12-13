@@ -1,0 +1,16 @@
+<section id="auth-page">
+  <div class="user-icon-container">
+    <img src="assets/images/user_icon.svg" alt="User icon">
+  </div>
+  <div class="login-forum-container ">
+    <div class="email line">
+      <h3>Email: </h3>
+      <input type="text" name="user-email" value="" #email>
+    </div>
+    <div class="password line">
+      <h3>Password: </h3>
+      <input type="text" name="user-password" value="" #password>
+    </div>
+    <button type="button" name="button" class="login-btn" (click)="get_user_token(email, password)"><h2>Log in</h2></button>
+  </div>
+</section>
