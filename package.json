@@ -21,6 +21,7 @@
     "@angular/router": "~10.1.0",
     "jquery": "^3.5.1",
     "light-server": "^2.9.1",
+    "ngx-cookie-service": "^11.0.2",
     "rxjs": "~6.6.0",
     "simplebar-angular": "^2.3.0",
     "tslib": "^2.0.0",
